@@ -1,0 +1,33 @@
+<div class="container text-center">
+  <h2 class="mt-4 mb-4">poto destinasi</h2>
+
+  <div class="row justify-content-center">
+
+    <?php
+    if (mysqli_num_rows($photodestinasi) > 0) {
+      $count = 0; // Counter untuk melacak jumlah kartu
+      while ($row = mysqli_fetch_array($photodestinasi)) {
+    ?>
+
+        <div class="col-sm-3 mt-2 mb-2">
+          <div class="card shadow mb-3" style="width: 18rem;">
+            <img class="card-img-top mt-4 mb-4 mx-auto" style="width:257px; height:150px; display: block;" src="../images/<?php echo $row["fotodestinasiFILE"] ?>" alt="Gambar Tidak Ada">
+
+            <div class="card-body">
+              <h5 class="card-title"><?php echo $row["fotodestinasiNAMA"]; ?></h5>
+             
+            </div>
+          </div>
+        </div>
+
+        <?php
+        $count++;
+        // Periksa apakah dua kartu sudah ditampilkan, jika ya, mulai baris baru
+        if ($count % 4 === 0) {
+          echo '</div><div class="row justify-content-center">';
+        }
+      }
+    }
+    ?>
+  </div>
+</div>

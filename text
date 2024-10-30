@@ -1,0 +1,29 @@
+<div class="card-container">
+    <div class="d-flex">
+        <img src="../images/io.jpg" class="card-img-top rounded" alt="Image Alt Text">
+        <div class="card-body">
+            <h5 class="card-title">Treasure</h5>
+            <p class="card-text">Worldwide fans' choice, Artist of the year, Best male group</p>
+        </div>
+    </div>
+</div>
+
+<div class="card-container">
+    <div class="d-flex">
+        <img src="../images/io3.jpg" class="card-img-top rounded" alt="Image Alt Text">
+        <div class="card-body">
+            <h5 class="card-title">NCT Dream</h5>
+            <p class="card-text">Best male group, Best dance performance male group, song of the year, artist of the year, worldwide fans' choice.</p>
+        </div>
+    </div>
+</div>
+
+<div class="card-container">
+    <div class="d-flex">
+        <img src="../images/io2.jpg" class="card-img-top rounded" alt="Image Alt Text">
+        <div class="card-body">
+            <h5 class="card-title">Straykids</h5>
+            <p class="card-text">Worldwide fans' choice, Artist of the year, Song of the year, Best music video.</p>
+        </div>
+    </div>
+</div>
